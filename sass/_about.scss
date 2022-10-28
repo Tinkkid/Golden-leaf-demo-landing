@@ -3,6 +3,7 @@
    padding-bottom: 80px;
    @include flex (space-between, center);
    flex-wrap: nowrap;
+   gap: 20px;
 
    &__title {
       margin-bottom: 50px;
@@ -27,8 +28,22 @@
 
    &__text--secondary {
       max-width: 600px;
-      width: 50%;
+
       @include font (400, 18px, 1.75);
       text-align: center;
+   }
+
+   &__img {
+      position: relative;
+
+      .circle {
+         @include circle;
+         right: 0;
+         transform: translate(30%, -50%);
+      }
+
+      img {
+         @include img-decor;
+      }
    }
 }

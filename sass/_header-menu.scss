@@ -1,5 +1,6 @@
 .header__list {
     @include flex(center, center);
+    flex-wrap: nowrap;
     gap: 30px;
 }
 

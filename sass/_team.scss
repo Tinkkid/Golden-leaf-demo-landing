@@ -1,0 +1,89 @@
+.team {
+    position: relative;
+    min-height: 675px;
+
+    &__bg {
+        @include bg-img;
+    }
+
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    &::after {
+        @include bg-shadow;
+        background: linear-gradient(
+            180deg,
+            #000000 0%,
+            rgba(0, 0, 0, 0.3) 100%
+        );
+    }
+
+    &__block {
+      @include flex (space-between, center);
+   flex-wrap: nowrap;
+   gap: 20px;
+    }
+
+    &__img {
+      position: relative;
+
+      .circle {
+         @include circle;
+         left: 0;
+         transform: translate(-35%, -43%);
+      }
+
+      img {
+         @include img-decor;
+      }
+    }
+
+    &__title {
+        @include font(700, 14px, 1.17);
+        color: $main-light;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__chef {
+      margin-bottom: 40px;
+
+      @include font (400,42px,1.14);
+      font-family: 'Kurale';
+      text-transform: uppercase;
+      text-align: center;
+      color: $main-light;
+
+      &::after {
+         @include line;
+      }
+    }
+   
+    &__text--primary {
+      margin-bottom: 30px;
+      max-width: 600px;
+
+      @include font (700,18px,1.56);
+      text-align: center;
+      color: $main-light;
+    }
+
+    &__text--secondary {
+      max-width: 600px;
+
+      @include font (400, 18px, 1.75);
+      text-align: center;
+      color: $main-light;
+    }
+}
