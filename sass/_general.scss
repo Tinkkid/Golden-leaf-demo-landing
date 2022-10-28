@@ -1,0 +1,55 @@
+// *$variables
+
+$primary_text: #000;
+$brand-color: #E8C300;
+$main-light: #fff;
+$font-size:18px;
+// $wrap: 1600px;
+$container:1400px;
+$mc: 0 auto;
+
+// *mixins
+
+@mixin flex ($jc, $ai) {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: $jc;
+   align-items: $ai;
+}
+
+@mixin font ($fw, $fs, $lh) {
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+}
+
+@mixin line {
+   content: "";
+   display: block;
+   width: 60px;
+   height: 5px;
+   border-radius: 20px;
+   background: $brand-color;
+   margin: $mc;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+body {
+   background-color: $main-light;
+   color: $primary_text;
+   font-family: "open sans" sans-serif;
+   font-size: $font-size;
+}
+
+.wrapper {
+   // max-width: $wrap;
+   margin: $mc;
+}
+
+.container {
+   max-width: $container;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin: $mc;
+}

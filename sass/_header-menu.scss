@@ -1,0 +1,40 @@
+.header__list {
+    @include flex(center, center);
+    gap: 30px;
+}
+
+.header__item {
+
+
+    a {
+        display: block;
+        padding: 30px 20px;
+        color: $main-light;
+        border-top: 5px solid transparent;
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        @include font(700, 12px, 1.5);
+        text-transform: uppercase;
+
+        &:hover {
+            color: $brand-color;
+            border-top: 5px solid $brand-color;
+        }
+    }
+}
+
+.logo {
+    width: 55px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    &__title {
+        margin-top: 10px;
+        font-family: 'Kurale';
+        @include font(700, 18px, 1.5);
+        color: $brand-color;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
