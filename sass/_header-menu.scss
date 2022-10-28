@@ -26,15 +26,6 @@
 .logo {
     width: 55px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 45px;
     margin-left: 20px;
-
-    &__title {
-        margin-top: 10px;
-        font-family: 'Kurale';
-        @include font(700, 18px, 1.5);
-        color: $brand-color;
-        text-align: center;
-        text-transform: uppercase;
-    }
 }

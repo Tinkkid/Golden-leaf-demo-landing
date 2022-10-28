@@ -128,16 +128,11 @@
 // *time-work
 
 .time-work {
-   max-height: 30px;
+   width:60px;
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
    @include font (700,12px,null);
-   display: flex;
-   flex-direction: column;
    align-items: start;
    color: $main-light;
-   transform: rotate(-90deg);
-
-   &__shedule {
-      padding-top: 20px;
-      padding-bottom: 20px;
-   }
+   transform: rotate(180deg);
 }

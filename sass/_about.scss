@@ -1,0 +1,34 @@
+.about {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   @include flex (space-between, center);
+   flex-wrap: nowrap;
+
+   &__title {
+      margin-bottom: 50px;
+
+      @include font (400,42px,1.14);
+      font-family: 'Kurale';
+      text-transform: uppercase;
+      text-align: center;
+
+      &::after {
+         @include line;
+      }
+   }
+
+   &__text--primary {
+      margin-bottom: 30px;
+      max-width: 600px;
+
+      @include font (700,18px,1.56);
+      text-align: center;
+   }
+
+   &__text--secondary {
+      max-width: 600px;
+      width: 50%;
+      @include font (400, 18px, 1.75);
+      text-align: center;
+   }
+}

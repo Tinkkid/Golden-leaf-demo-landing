@@ -26,7 +26,7 @@ $mc: 0 auto;
 @mixin line {
    content: "";
    display: block;
-   width: 60px;
+   width: 80px;
    height: 5px;
    border-radius: 20px;
    background: $brand-color;
@@ -49,7 +49,7 @@ body {
 
 .container {
    max-width: $container;
-   padding-left: 50px;
-   padding-right: 50px;
+   padding-left: 20px;
+   padding-right: 20px;
    margin: $mc;
 }
