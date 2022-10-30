@@ -6,12 +6,7 @@
    gap: 20px;
 
    &__title {
-      margin-bottom: 50px;
-
-      @include font (400,42px,1.14);
-      font-family: 'Kurale';
-      text-transform: uppercase;
-      text-align: center;
+      @extend %title-section;
 
       &::after {
          @include line;

@@ -57,12 +57,8 @@
     }
 
     &__chef {
-      margin-bottom: 40px;
 
-      @include font (400,42px,1.14);
-      font-family: 'Kurale';
-      text-transform: uppercase;
-      text-align: center;
+      @extend %title-section;
       color: $main-light;
 
       &::after {

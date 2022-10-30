@@ -58,17 +58,21 @@ $mc: 0 auto;
 }
 
 @mixin bg-shadow {
-   content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(
-            180deg,
-            #000000 0%,
-            rgba(0, 0, 0, 0.7) 100%
-        );
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+%title-section {
+    margin-bottom: 40px;
+    @include font(400, 42px, 1.14);
+    font-family: 'Kurale';
+    text-transform: uppercase;
+    text-align: center;
 }
 
 body {

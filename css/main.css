@@ -24,6 +24,16 @@ p {
   margin: 0;
 }
 
+.team__chef, .about__title {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.14;
+  font-family: "Kurale";
+  text-transform: uppercase;
+  text-align: center;
+}
+
 body {
   background-color: #fff;
   color: #000;
@@ -220,15 +230,6 @@ body {
   flex-wrap: nowrap;
   gap: 20px;
 }
-.about__title {
-  margin-bottom: 50px;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 1.14;
-  font-family: "Kurale";
-  text-transform: uppercase;
-  text-align: center;
-}
 .about__title::after {
   content: "";
   display: block;
@@ -343,13 +344,6 @@ body {
   margin-bottom: 40px;
 }
 .team__chef {
-  margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 1.14;
-  font-family: "Kurale";
-  text-transform: uppercase;
-  text-align: center;
   color: #fff;
 }
 .team__chef::after {
