@@ -108,6 +108,8 @@
                 </div>
             </section>
             <main>
+
+                <!-- About the restuatant -->
                 <section class="wrapper" id="about">
                     <div class="container about">
                         <div class="about__description">
@@ -134,7 +136,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="wrapper team">
+
+                <!-- About team -->
+                <section class="wrapper team" id="team">
                     <img src="./img/specialty's-bg.jpeg" alt="" class="team__bg">
                     <div class="team__container">
                         <h3 class="team__title">Our team</h3>
@@ -165,6 +169,38 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Reservation of the table -->
+                <section class="wrapper">
+                    <div class="container order">
+                        <div class="order__reserv">
+                            <h2 class="order__title">table reservation</h2>
+
+                            <form action="" class="order__form">
+                                <input type="text" name="name" required placeholder="Name">
+                                <input type="email" name="email" required placeholder="Email">
+                                <input type="tel" name="phone" required placeholder="Phone">
+                                <input type="number" name="guests" required placeholder="Number of guests" min="1" max="100">
+                                <input type="date" min="2022-10-01" max="2023-01-0" name="date" required placeholder="Date">
+                                <input type="time" required placeholder="Time">
+                                <button type="submit" class="order__btn">reserve a table</button>
+                            </form>  
+
+                        </div>
+
+                        <div class="order__img">
+                            <img src="./img/reservation-475.jpeg" alt="reservation"/>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="order__time">
+                            Пн - Пт: <strong>8 - 22</strong>, Сб - Вс: <strong>9 - 23</strong>, Телефон: <a href="tel:+38098 729 13 67">+38098 729 13 67</a>
+                            <a href="tel:+38097 458 78 79">/+38097 458 78 79</a>
+                        </div>
+                    </div>
+                </section>
+
             </main>
         </header>
     </body>

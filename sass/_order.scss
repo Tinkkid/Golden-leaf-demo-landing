@@ -1,0 +1,78 @@
+.order {
+   padding-top: 80px;
+   padding-bottom: 45px;
+   @include flex (space-between, center);
+   flex-wrap: nowrap;
+
+
+   &__title {
+      @extend %title-section;
+
+      &::after {
+         @include line;
+      }
+   }
+
+   &__reserv {
+      max-width: 565px;
+      width: 50%;
+      text-align: center;
+   }
+
+   &__form {
+      @include flex (space-between, center);
+      input {
+         width: calc(50% - 5px);
+         margin-bottom: 10px;
+         border-radius: 5px;
+         background-color: $background-grey;
+         border: 1px solid transparent;
+         outline: none;
+         height: 60px;
+         padding: 0 20px;
+         @include font (400,14px,1.35);
+         color: $opacity-grey; 
+         transition: 0.3s;
+
+         &:focus {
+            border: 1px solid $brand-color;
+         }
+      }
+   }
+
+      &__select {
+         option {
+            width: calc(50% - 5px);
+         margin-bottom: 10px;
+         border-radius: 5px;
+         background-color: $background-grey;
+         border: 1px solid transparent;
+         outline: none;
+         height: 60px;
+         padding: 0 20px;
+         @include font (400,14px,1.35);
+         color: $opacity-grey; 
+         transition: 0.3s;
+
+         &:focus {
+            border: 1px solid $brand-color;
+         }
+         }
+         
+      }
+      
+
+   &__img {
+      position: relative;
+
+      .circle {
+         @include circle;
+         right: 0;
+         transform: translate(30%, -50%);
+      }
+
+      img {
+         @include img-decor;
+      }
+   }
+}
