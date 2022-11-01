@@ -33,7 +33,7 @@ $mc: 0 auto;
     border-radius: 20px;
     background: $brand-color;
     margin: $mc;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@ $mc: 0 auto;
 }
 
 %title-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     @include font(400, 42px, 1.14);
     font-family: 'Kurale';
     text-transform: uppercase;

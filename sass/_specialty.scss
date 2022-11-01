@@ -1,9 +1,9 @@
-.team {
+.specialty {
     position: relative;
     min-height: 675px;
 
     &__bg {
-        @include bg-img;
+        @include bg-img;       
     }
 
     &__container {
@@ -24,7 +24,7 @@
         background: linear-gradient(
             180deg,
             #000000 0%,
-            rgba(0, 0, 0, 0.3) 100%
+            rgba(0, 0, 0, 0) 100%
         );
     }
 
@@ -36,7 +36,6 @@
 
     &__img {
       position: relative;
-      max-width: 100%;
 
       .circle {
          @include circle;
@@ -83,9 +82,4 @@
       text-align: center;
       color: $main-light;
     }
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
 }

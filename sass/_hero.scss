@@ -43,6 +43,7 @@
 
         &::after {
          @include line;
+         margin-top: 50px;
         }
     }
 

@@ -38,29 +38,19 @@
             border: 1px solid $brand-color;
          }
       }
-   }
 
-      &__select {
-         option {
-            width: calc(50% - 5px);
-         margin-bottom: 10px;
-         border-radius: 5px;
-         background-color: $background-grey;
-         border: 1px solid transparent;
-         outline: none;
+      .order__btn {
+         width: 100%;
          height: 60px;
-         padding: 0 20px;
-         @include font (400,14px,1.35);
-         color: $opacity-grey; 
-         transition: 0.3s;
-
-         &:focus {
-            border: 1px solid $brand-color;
-         }
-         }
-         
+         background-color: $brand-color;
+         border: none;
+         color: $main-light;
+         text-transform: uppercase;
+         @include font (700,12px,1.67);
+         cursor: pointer;
+         border-radius: 5px;
       }
-      
+   }
 
    &__img {
       position: relative;
@@ -74,5 +64,19 @@
       img {
          @include img-decor;
       }
+   }
+
+   &__time {
+      display: flex;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      justify-content: center;
+      @include font (400,12px,1);
+      color: $opacity-grey;
+
+      a {
+         font-weight: bold;
+      }
+
    }
 }
