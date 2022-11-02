@@ -1,63 +1,30 @@
 .specialty {
-    position: relative;
-    min-height: 675px;
+   position: relative;
+   //  min-height: 675px;
 
-    &__bg {
-        @include bg-img;       
-    }
-
-    &__container {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+   &__title {
+      position: absolute;
+      width: 100%;
+      top: 8%;
+      left: 50%;
+        @include font(700, 14px, 1.17);
+        color: $main-light;
+        text-transform: uppercase;
         z-index: 2;
-    }
-
-    &::after {
-        @include bg-shadow;
-        background: linear-gradient(
-            180deg,
-            #000000 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
-    }
-
-    &__block {
-      @include flex (space-between, center);
-   flex-wrap: nowrap;
-   gap: 20px;
     }
 
     &__img {
       position: relative;
+      max-width: 100%;
 
       .circle {
          @include circle;
          left: 0;
          transform: translate(-35%, -43%);
       }
-
-      img {
-         @include img-decor;
-      }
-    }
-
-    &__title {
-        @include font(700, 14px, 1.17);
-        color: $main-light;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 40px;
     }
 
     &__chef {
-
       @extend %title-section;
       color: $main-light;
 
@@ -82,4 +49,27 @@
       text-align: center;
       color: $main-light;
     }
+}
+
+// Custom setup Swiper Slide
+
+.specialty__slider {
+   background: url(../img/specialty-bg.jpeg) center/cover no-repeat;
+    padding-top: 145px;
+    padding-bottom: 95px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.swiper-slide img {
+   width: 475px;
+   @include img-decor;
+}
+
+.swiper-slide {
+   display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }

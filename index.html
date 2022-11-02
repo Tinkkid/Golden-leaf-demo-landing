@@ -4,8 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Restaurant Golden Leaf demo</title>
-        
+        <title>Restaurant Golden Leaf demo</title>     
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -19,7 +18,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
 
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </section>
-            <main>
+            </header>
 
                 <!-- About the restuatant -->
                 <section class="wrapper" id="about">
@@ -206,67 +206,92 @@
                 </section>
 
                 <!-- Specialty dishes -->
-                <div class="wrapper">
-
-                        <h2>slider</h2>
-                             
-                        <!-- Slider -->
-                            <div class="specialty__slider swiper">
-
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                          
-                                        <div class="swiper-slide">
-                                            <div class="specialty__img">
-                                                <img src="./img/edible-gold-leaf.jpeg" width="475" alt="" />
-                                                <!-- <div class="circle"></div> -->
-                                            </div>
-                                            <!-- <div class="specialty__description">
-                                                <h2 class="specialty__chef">Golden leaf</h2>
-                                                <p class="specialty__text--primary">
-                                                    Incredibly beautiful dessert with true gold "chocolate pleasure" with raspberry parfait.
-                                                </p>
-                                                <p class="specialty__text--secondary">
-                                                    To find out what gold tastes like, we invite you to our restaurant. Dark Belgian chocolate, Amaretto,
-                                                    mint-lemongrass mousse, carrot-passion fruit center - it's almost impossible to resist.
-                                                </p> -->
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="specialty__img">
-                                                <img src="./img/reservation-475.jpeg" width="475" alt="" />
-                                                <!-- <div class="circle"></div> -->
-                                            </div>
-                                            <!-- <div class="specialty__description">
-                                                <h2 class="specialty__chef">Golden leaf</h2>
-                                                <p class="specialty__text--primary">
-                                                    Incredibly beautiful dessert with true gold "chocolate pleasure" with raspberry parfait.
-                                                </p>
-                                                <p class="specialty__text--secondary">
-                                                    To find out what gold tastes like, we invite you to our restaurant. Dark Belgian chocolate, Amaretto,
-                                                    mint-lemongrass mousse, carrot-passion fruit center - it's almost impossible to resist.
-                                                </p>
-                                            </div> -->
-                                        </div>
-                                    </div>
+                <section class="wrapper specialty">
+                    <h3 class="specialty__title">Special menu</h3>
+                    <!-- <img src="./img/specialty-bg.jpeg" alt="" class="specialty__bg"> -->
+                    <div class="specialty__container">
+                        <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+    
+                            <!-- slide 1-st -->
+                            <div class="swiper-slide specialty__slider">
+                                <div class="specialty__img">
+                                <img src="./img/reservation-475.jpeg" alt=""/>
+                                <div class="circle"></div>
+                                </div>
+                                <div class="specialty__description">
+                                   <h2 class="specialty__chef">Golden Leaf</h2>
+                                <p class="specialty__text--primary">
+                                    Magical atmosphere, impeccable service,
+                                    exquisite interior and, most importantly, the
+                                    richest selection of delicious dishes of
+                                </p>
+                                <p class="specialty__text--secondary">
+                                    The restaurant is ideally complemented by a cozy
+                                    coffee shop located on the 1-th floor. A cup of
+                                    amazing coffee and sweets from a local pastry
+                                    chef will charge you with cheerfulness and
+                                    positive energy.
+                                </p> 
+                                </div>
+                            </div>
+    
+                            <!-- slide 2d -->
+                            <div class="swiper-slide specialty__slider">
+                                <div class="specialty__img">
+                                <img src="./img/reservation-475.jpeg" alt=""/>
+                                <div class="circle"></div>
+                                </div>
+                                <div class="specialty__description">
+                                   <h2 class="specialty__chef">Meat</h2>
+                                <p class="specialty__text--primary">
+                                    Magical atmosphere, impeccable service,
+                                    exquisite interior and, most importantly, the
                                     
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                            
-                                <!-- If we need scrollbar -->
-                                <div class="swiper-scrollbar"></div>
-                            
-                        
-                </div>
+                                </p>
+                                <p class="specialty__text--secondary">
+                                    The restaurant is ideally complemented by a cozy
+                                    coffee shop located on the 1-th floor. A cup of
+                                    amazing coffee and sweets from a local pastry
+                                    chef will charge you with cheerfulness and
+                                    positive energy.
+                                </p> 
+                                </div>
+                            </div>
+    
+                            <!-- slide 3td -->
+                            <div class="swiper-slide specialty__slider">
+                                <div class="specialty__img">
+                                <img src="./img/team.jpeg" alt=""/>
+                                <div class="circle"></div>
+                                </div>
+                                <div class="specialty__description">
+                                   <h2 class="specialty__chef">Salad</h2>
+                                <p class="specialty__text--primary">
+                                    Magical atmosphere, impeccable service,
+                                    exquisite interior and, most importantly, the
+                                    richest selection of delicious dishes of
+                                    
+                                </p>
+                                <p class="specialty__text--secondary">
+                                    The restaurant is ideally complemented by a cozy
+                                    coffee shop located on the 1-th floor. A cup of
+                                    amazing coffee and sweets from a local pastry
+                                    chef will charge you with cheerfulness and
+                                    positive energy.
+                                </p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
 
-            </main>
-        </header>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script src="./js/srcipts.js"></script>
+                
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initializaion script -->
+                <script src="js/scripts.js"></script>
     </body>
 </html>

@@ -24,7 +24,7 @@ p {
   margin: 0;
 }
 
-.order__title, .team__chef, .about__title {
+.specialty__chef, .order__title, .team__chef, .about__title {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 42px;
@@ -377,11 +377,6 @@ body {
   color: #fff;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
 .order {
   padding-top: 80px;
   padding-bottom: 45px;
@@ -389,6 +384,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   flex-wrap: nowrap;
 }
 .order__title::after {
@@ -474,4 +470,110 @@ body {
 }
 .order__time a {
   font-weight: bold;
+}
+
+.swiper {
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.specialty {
+  position: relative;
+}
+.specialty__title {
+  position: absolute;
+  width: 100%;
+  top: 8%;
+  left: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.specialty__img {
+  position: relative;
+  max-width: 100%;
+}
+.specialty__img .circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  border-radius: 50%;
+  border: 20px solid #e8c300;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  left: 0;
+  transform: translate(-35%, -43%);
+}
+.specialty__chef {
+  color: #fff;
+}
+.specialty__chef::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  border-radius: 20px;
+  background: #e8c300;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.specialty__text--primary {
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: #fff;
+}
+.specialty__text--secondary {
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: center;
+  color: #fff;
+}
+
+.specialty__slider {
+  background: url(../img/specialty-bg.jpeg) center/cover no-repeat;
+  padding-top: 145px;
+  padding-bottom: 95px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.swiper-slide img {
+  width: 475px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
