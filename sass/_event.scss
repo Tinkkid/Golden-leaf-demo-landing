@@ -1,0 +1,47 @@
+.event {
+   background-image: url('../img/event-bg.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   padding-top: 40px;
+   padding-bottom: 45px;
+
+   &__title {
+      color: $main-light;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+
+   &__images {
+   @include flex (center,center);
+   position: relative;
+   flex-wrap: nowrap;
+   gap: 80px;
+   margin-bottom: 45px;
+
+   .circle-left {
+         @include circle;
+         left: 0;
+         transform: translate(-35%, -43%);
+   }
+
+   .circle-right {
+      @include circle;
+         right: 0;
+         transform: translate(30%, -50%);
+   }
+   }
+
+   &__text-down {
+      color: $grey-text;
+      text-align: center;
+   }
+}
+
+.events-pic {
+   width: 400px;
+   height: 400px;
+   object-fit: cover;
+   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}

@@ -1,27 +1,30 @@
 
       var swiper = new Swiper('.swiper-spec', {
-        spaceBetween: 30,
-        loop: true,
-        speed: 800,
-        pagination: {
+          loop: true,
+          speed: 800,
+          slideToClickedSlide: true,
+          pagination: {
               el: '.swiper-pagination',
               clickable: true,
-              loop: true,
           },
       });
 
-const swiperMenu = new Swiper('.menu__slider', {
+var swiperMenu = new Swiper('.menu__slider', {
     slidesPerView: 2,
-    slidesPerColumn: 2,
-    speed: 500,
+    slidesPerColumn: 4,
+  spaceBetween: 10,
+  slidesPerGroup: 2,
+  speed: 500,
+    slideToClickedSlide: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-    },
+      loop: false,
+  },
 });
 
-let tabs = document.querySelector('.tabs');
-let menuSlider = document.querySelectorAll('.menu__slider-block');
+var tabs = document.querySelector('.tabs');
+var menuSlider = document.querySelectorAll('.menu__slider-block');
 
 tabs.addEventListener('click', function (e) {
     if (e.target.classList.contains('tabs__item')) {
@@ -49,13 +52,3 @@ function overflowTabs() {
         innerTabs.classList.remove('overflow');
     }
 }
-
-
-      // var swiper = new Swiper('.mySwiper', {
-      //     spaceBetween: 30,
-      //     pagination: {
-      //         el: '.swiper-pagination',
-      //         clickable: true,
-      //         loop: true,
-      //     },
-      // });

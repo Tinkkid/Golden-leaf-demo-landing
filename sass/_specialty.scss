@@ -53,11 +53,13 @@
 // Custom setup Swiper Slide
 
 .specialty__slider {
-    background: url(../img/specialty-bg.jpeg) center/cover no-repeat;
+    background: url(../img/specialty-bg.jpeg) no-repeat;
+    background-size: cover;
+    height: auto;
     padding-top: 145px;
     padding-bottom: 95px;
     padding-left: 130px;
-    padding-right: 130px;
+    padding-right: 131px;
 }
 
 .swiper-slide .dish__img{
