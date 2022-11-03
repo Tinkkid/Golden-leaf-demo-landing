@@ -1,12 +1,11 @@
 .specialty {
-   position: relative;
-   //  min-height: 675px;
+    position: relative;
+    //  min-height: 675px;
 
-   &__title {
-      position: absolute;
-      width: 100%;
-      top: 8%;
-      left: 50%;
+    &__title {
+        position: absolute;
+        top: 8%;
+        left: 50%;
         @include font(700, 14px, 1.17);
         color: $main-light;
         text-transform: uppercase;
@@ -14,62 +13,72 @@
     }
 
     &__img {
-      position: relative;
-      max-width: 100%;
+        position: relative;
+        max-width: 100%;
 
-      .circle {
-         @include circle;
-         left: 0;
-         transform: translate(-35%, -43%);
-      }
+        .circle {
+            @include circle;
+            left: 0;
+            transform: translate(-35%, -43%);
+        }
     }
 
     &__chef {
-      @extend %title-section;
-      color: $main-light;
+        @extend %title-section;
+        color: $main-light;
 
-      &::after {
-         @include line;
-      }
+        &::after {
+            @include line;
+        }
     }
-   
-    &__text--primary {
-      margin-bottom: 30px;
-      max-width: 600px;
 
-      @include font (700,18px,1.56);
-      text-align: center;
-      color: $main-light;
+    &__text--primary {
+        margin-bottom: 30px;
+        max-width: 600px;
+
+        @include font(700, 18px, 1.56);
+        text-align: center;
+        color: $main-light;
     }
 
     &__text--secondary {
-      max-width: 600px;
+        max-width: 600px;
 
-      @include font (400, 18px, 1.75);
-      text-align: center;
-      color: $main-light;
+        @include font(400, 18px, 1.75);
+        text-align: center;
+        color: $main-light;
     }
 }
 
 // Custom setup Swiper Slide
 
 .specialty__slider {
-   background: url(../img/specialty-bg.jpeg) center/cover no-repeat;
+    background: url(../img/specialty-bg.jpeg) center/cover no-repeat;
     padding-top: 145px;
     padding-bottom: 95px;
     padding-left: 130px;
     padding-right: 130px;
 }
 
-.swiper-slide img {
-   width: 475px;
-   @include img-decor;
+.swiper-slide .dish__img{
+    width: 475px;
+    @include img-decor;
 }
 
 .swiper-slide {
-   display: flex;
+    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+.swiper-pagination-bullet {
+   width: 10px;
+   height: 10px;
+   background-color: $brand-color;
+}
+
+.swiper-spec {
+    background-color: $grey-text;
 }
