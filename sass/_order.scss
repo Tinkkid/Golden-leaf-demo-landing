@@ -50,6 +50,11 @@
          @include font (700,12px,1.67);
          cursor: pointer;
          border-radius: 5px;
+
+         &:hover,
+        &:focus {
+            background-color: darken($color: $brand-color, $amount: 10%);
+        }
       }
    }
 

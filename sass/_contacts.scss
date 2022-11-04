@@ -1,0 +1,123 @@
+.contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__title {
+        @extend %title-section;
+
+        &::after {
+            @include line;
+        }
+    }
+    &__text--primary {
+        margin-bottom: 30px;
+
+        @include font(700, 18px, 1.56);
+        text-align: center;
+    }
+
+    &__label {
+        @include flex(space-between, center);
+        flex-wrap: nowrap;
+        max-width: 1400px;
+    }
+    &__form {
+        max-width: 1400px;
+    }
+
+    &__input {
+        width: calc(33.3333% - 15px);
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+        background-color: $background-grey;
+        border: 1px solid transparent;
+        outline: none;
+        color: $grey-text;
+        transition: 0.3s;
+        @include font(400, 14px, 1.35);
+
+        &:hover,
+        &:focus {
+            border: 1px solid $brand-color;
+        }
+    }
+
+    &__textarea {
+        resize: none;
+        max-height: 120px;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: $background-grey;
+        border: 1px solid transparent;
+        outline: none;
+        color: $grey-text;
+        transition: 0.3s;
+        @include font(400, 14px, 1.35);
+
+        &:hover,
+        &:focus {
+            border: 1px solid $brand-color;
+        }
+    }
+}
+
+.contacts {
+    @include flex(space-between, center);
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    &__data {
+        @include flex(flex-start, center);
+        gap: 10px;
+    }
+
+    &__item {
+        @include flex(flex-start, center);
+        @include font(400, 12px, 1);
+        color: $grey-text;
+    }
+
+    &__btn {
+        max-width: 500px;
+        width: 50%;
+        background-color: $brand-color;
+        height: 60px;
+        border: none;
+        color: $main-light;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.67;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color: $brand-color, $amount: 10%);
+        }
+    }
+}
+.map {
+   width: 100%;
+   height: 475px;
+
+   iframe {
+      width:100%;
+      height: 100%;
+   }
+}
+
+footer {
+   background-color: $primary_text;
+   text-align: center;
+   @include font (400,12px,1);
+   color:$grey-text;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
