@@ -186,7 +186,6 @@ body {
   font-size: 12px;
   align-items: start;
   color: #fff;
-  transform: rotate(180deg);
 }
 
 .header__list {
@@ -736,6 +735,10 @@ body {
   padding-bottom: 45px;
 }
 .event__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
@@ -759,7 +762,9 @@ body {
   border: 20px solid #e8c300;
   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
   left: 0;
+  top: 45%;
   transform: translate(-35%, -43%);
+  z-index: 2;
 }
 .event__images .circle-right {
   position: absolute;
@@ -770,10 +775,50 @@ body {
   border: 20px solid #e8c300;
   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
   right: 0;
-  transform: translate(30%, -50%);
+  top: 45%;
+  transform: translate(30%, -47%);
+  z-index: 2;
+}
+.event__images .event__block-left {
+  width: 399px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+  background-color: #e8c300;
+  position: absolute;
+  left: 3%;
+  top: 90%;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  font-family: "Kurale";
+  text-transform: uppercase;
+}
+.event__images .event__block-right {
+  width: 399px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+  background-color: #e8c300;
+  position: absolute;
+  right: 3%;
+  top: 90%;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  font-family: "Kurale";
+  text-transform: uppercase;
 }
 .event__text-down {
-  color: #333333;
+  color: #E5E5E5;
   text-align: center;
 }
 
