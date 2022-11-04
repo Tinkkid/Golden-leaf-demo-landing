@@ -120,7 +120,9 @@
    width:60px;
    writing-mode: vertical-rl;
    transform: rotate(180deg);
-   @include font (700,12px,null);
+   @include font (700,14px,1.2);
+   letter-spacing: 0.5;
    align-items: start;
    color: $main-light;
+   text-transform: uppercase;
 }
